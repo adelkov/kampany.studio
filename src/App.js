@@ -76,4 +76,11 @@ const AppContainer = styled.div`
   grid-template-rows: repeat(5, 1fr);
   column-gap: 10px;
   row-gap: 10px;
+  //@media (max-width: 75em) {
+  //  height: auto;
+  //  display: flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  //  justify-content: center;
+  //   }
 `

@@ -18,7 +18,7 @@ const StyledSecondaryBanner = styled.div`
   padding: 0 30px;
   background: ${props => props.theme.third};
   color: ${props => props.theme.main};
-  font-size: 30px;
-  line-height: 80px;
-  height: 82px;
+  font-size: 3em;
+  line-height: 3em;
+  height: auto;
 `

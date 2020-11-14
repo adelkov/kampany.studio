@@ -18,7 +18,7 @@ const StyledMainBanner = styled.div`
   text-align: center;
   background: ${props => props.theme.main};
   color: ${props => props.theme.third};
-  font-size: 50px;
+  font-size: 5em;
   height: 126px;
   line-height: 120px;
   padding: 0 30px;

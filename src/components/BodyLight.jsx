@@ -15,6 +15,6 @@ export default BodyLight
 
 const StyledBodyLight = styled.div`
   color: ${props => props.theme.white};
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 3em;
+  line-height: 1.4em;
 `
