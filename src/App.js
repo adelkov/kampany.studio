@@ -61,6 +61,7 @@ const Back = styled.div`
 const AppContainer = styled.div`
   padding: 3rem;
   height: calc(100vh - 6rem);
+  max-height: 1000px;
   width: 1170px;
   background: ${props => props.theme.second};
   // box-shadow:
