@@ -18,7 +18,7 @@ const StyledOutlinedBanner = styled.div`
   width: 15rem;
   text-align: center;
   color: ${props => props.theme.main};
-  font-size: 3em;
+  font-size: 2.4em;
   height: 126px;
   padding: 0 30px;
   text-shadow: 0 4px 4px rgba(0, 58, 92, 0.25);

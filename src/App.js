@@ -16,7 +16,7 @@ function App() {
     <Back>
       <AppContainer>
         <MainBannerContainer>
-          <MainBanner>kampany.studio</MainBanner>
+          <MainBanner id={'  '}>kampany.studio</MainBanner>
         </MainBannerContainer>
         <div style={{ gridArea: '1 / 3 / 1 / 4', justifySelf: 'end' }}>
           <OutlinedBanner id={'christmas-banner'}>Nyakunkon a karácsony!</OutlinedBanner>

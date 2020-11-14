@@ -17,7 +17,7 @@ export default Step
 
 const Index = styled.div`
   color: ${props => props.theme.third};
-  font-size: 5em;
+  font-size: 3.2em;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   justify-self: flex-start;
@@ -25,7 +25,7 @@ const Index = styled.div`
 
 const Text = styled.div`
   color: ${props => props.theme.white};
-  font-size: 3em;
+  font-size: 2.4em;
   text-align: center;
   justify-self: start;
   flex: 1;

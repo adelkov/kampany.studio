@@ -18,7 +18,7 @@ const StyledCAT = styled.div`
   text-align: center;
   background: ${props => props.theme.main};
   color: ${props => props.theme.third};
-  font-size: 3em;
+  font-size: 2.4em;
   
   border-radius: 15px;
   line-height: 50px;
