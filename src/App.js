@@ -19,24 +19,28 @@ function App() {
           <MainBanner>kampany.studio</MainBanner>
         </div>
         <div style={{ gridArea: '1 / 3 / 1 / 4', justifySelf: 'end' }}>
-          <OutlinedBanner id={'christmas-banner'}>Nyakunkon a karacsony</OutlinedBanner>
+          <OutlinedBanner id={'christmas-banner'}>Nyakunkon a karácsony!</OutlinedBanner>
         </div>
-        <div style={{ gridArea: '2 / 1 / 3 / 4', justifySelf: 'start' }}>
-          <BodyLight>Kampánytervezés és kivitelezés</BodyLight>
-          <BodyLight>Hogy eljusson a híred azokhoz, akiknek szukséguk van rad</BodyLight>
+        <div style={{ gridArea: '2 / 1 / 3 / 4', justifySelf: 'start', alignSelf: 'center' }}>
+          <BodyLight>Kampánytervezés és kivitelezés.
+          </BodyLight>
+          <BodyLight> Hogy eljusson a híred azokhoz, akiknek szükségük van rád.</BodyLight>
         </div>
         <div style={{ gridArea: '3 / 1 / 4 / 4', justifySelf: 'start' }}>
           <SecondaryBanner id={'subtitle'}>A Kampany Studio segít vállalkozásodnak a gyors és hatékony kommunikációban.
           </SecondaryBanner>
         </div>
-        <div style={{ gridArea: '4 / 1 / 5 / 4', display: 'flex', justifyContent: 'space-between'}}>
-          <Step index={1} text={"Fogalmazzuk me g a problemat"} />
-          <Step index={2} text={"Fogalmazzuk meg a problemat"} />
-          <Step index={3} text={"Fogalmazzuk meg a problemat"} />
+        <div style={{ gridArea: '4 / 1 / 5 / 2', justifySelf: 'center'}}>
+          <Step index={1} text={"Fogalmazzuk meg a problémát!"} />
         </div>
-
+        <div style={{ gridArea: '4 / 2 / 5 / 3', justifySelf: 'center'}}>
+          <Step index={2} text={"Készítsünk egyedi kampánytervet!"} />
+        </div>
+        <div style={{ gridArea: '4 / 3 / 5 / 4', justifySelf: 'center'}}>
+          <Step index={3} text={"Valósítsuk meg!"} />
+        </div>
         <div style={{ gridArea: '5 / 2 / 6 / 3', justifySelf: 'center', alignSelf: 'center'}}>
-          <CAT>Keszen allsz?</CAT>
+          <CAT>Készen állsz?</CAT>
         </div>
       </AppContainer>
     </Back>

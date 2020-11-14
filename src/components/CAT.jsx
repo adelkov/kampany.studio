@@ -25,5 +25,4 @@ const StyledCAT = styled.div`
   height: 54px;
   padding: 0 60px;
   white-space: nowrap;
-
 `

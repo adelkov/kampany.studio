@@ -23,5 +23,5 @@ const StyledMainBanner = styled.div`
   line-height: 120px;
   padding: 0 30px;
   white-space: nowrap;
-
+  font-weight: 700;
 `

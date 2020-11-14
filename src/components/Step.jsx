@@ -18,18 +18,26 @@ export default Step
 const Index = styled.div`
   color: ${props => props.theme.third};
   font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  justify-self: flex-start;
 `
 
 const Text = styled.div`
   color: ${props => props.theme.white};
   font-size: 30px;
   text-align: center;
+  justify-self: start;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const StyledStep = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   width: 14rem;
 `

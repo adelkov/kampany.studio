@@ -15,7 +15,7 @@ export default OutlinedBanner
 
 const StyledOutlinedBanner = styled.div`
   word-wrap: break-word;
-  width: 9rem;
+  width: 10rem;
   text-align: center;
   color: ${props => props.theme.main};
   font-size: 30px;
