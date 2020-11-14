@@ -39,5 +39,5 @@ const StyledStep = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 14rem;
+  max-width: 14rem;
 `
