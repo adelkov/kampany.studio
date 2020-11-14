@@ -15,9 +15,9 @@ function App() {
   return (
     <Back>
       <AppContainer>
-        <div style={{ gridArea: '1 / 1 / 1 / 2' }}>
+        <MainBannerContainer>
           <MainBanner>kampany.studio</MainBanner>
-        </div>
+        </MainBannerContainer>
         <div style={{ gridArea: '1 / 3 / 1 / 4', justifySelf: 'end' }}>
           <OutlinedBanner id={'christmas-banner'}>Nyakunkon a karácsony!</OutlinedBanner>
         </div>
@@ -83,4 +83,11 @@ const AppContainer = styled.div`
   //  align-items: center;
   //  justify-content: center;
   //   }
+`
+
+const MainBannerContainer = styled.div`
+  grid-area: 1 / 1 / 1 / 2;
+  @media (max-width: 75em) {
+    grid-area: 1 / 1 / 1 / 3;
+  }
 `
