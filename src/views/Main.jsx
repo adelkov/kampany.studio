@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import styled from "styled-components";
 import SecondaryBanner from "../components/SecondaryBanner";
 import MainBanner from "../components/MainBanner";
@@ -13,10 +13,10 @@ import Logo from "../components/Logo";
 function Main() {
   const history = useHistory();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap
       .timeline({ defaults: { opacity: 0, ease: "back" } })
-      .from("#back", { duration: 0.5 })
+      .from("#back", { duration: 0.5, autoAlpha: 0 })
       .from("#main-title", { x: -300 }, "-=0.5")
       .from(
         "#xmas",
@@ -115,6 +115,8 @@ function Main() {
 export default Main;
 
 const Back = styled.div`
+  visibility: hidden;
+
   width: 100vw;
   height: 100vh;
   display: flex;

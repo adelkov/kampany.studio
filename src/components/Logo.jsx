@@ -30,7 +30,8 @@ const LogoWrapper = styled.div`
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    width: 180px;
+    width: 80px;
+    height: 80px;
   }
 
   & #mobile-logo {
@@ -43,7 +44,8 @@ const LogoWrapper = styled.div`
     }
     & #mobile-logo {
       display: block;
-      width: 80%;
+      width: 120px;
+      height: 120px;
     }
   }
 `;

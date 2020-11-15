@@ -104,7 +104,7 @@ const Back = styled.div`
 const ContactContainer = styled.div`
   padding: 5rem;
   height: calc(100vh - 10rem);
-  max-height: 800px;
+  max-height: 1200px;
   width: 1170px;
   background: ${(props) => props.theme.second};
 
