@@ -9,6 +9,7 @@ import { ReactComponent as PhoneIcon } from "../svg/phone.svg";
 import { ReactComponent as EnvelopeIcon } from "../svg/mail.svg";
 import { useCustomTheme } from "../context/theme";
 import { useHistory } from "react-router-dom";
+import Logo from "../components/Logo";
 
 function Contact() {
   const history = useHistory();
@@ -78,6 +79,7 @@ function Contact() {
             icon={<PhoneIcon style={{ width: "4rem" }} fill={theme.main} />}
           />
         </a>
+        <Logo />
       </ContactContainer>
     </Back>
   );
@@ -86,6 +88,7 @@ function Contact() {
 export default Contact;
 
 const Back = styled.div`
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -94,7 +97,7 @@ const Back = styled.div`
   background: ${(props) => props.theme.second};
 
   @media (max-width: 600px) {
-    height: auto;
+    height: fit-content;
   }
 `;
 
@@ -119,12 +122,14 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 1200px;
     overflow: scroll;
+    height: fit-content;
 
     & #contact-me {
       text-align: center;
+    }
+    & > * {
+      margin-top: 2rem;
     }
   }
 `;

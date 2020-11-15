@@ -8,6 +8,7 @@ import BodyLight from "../components/BodyLight";
 import CAT from "../components/CAT";
 import gsap from "gsap";
 import { useHistory } from "react-router-dom";
+import Logo from "../components/Logo";
 
 function Main() {
   const history = useHistory();
@@ -105,6 +106,7 @@ function Main() {
         >
           Készen állsz?
         </CAT>
+        <Logo />
       </MainContainer>
     </Back>
   );
@@ -126,6 +128,7 @@ const Back = styled.div`
 `;
 
 const MainContainer = styled.div`
+  position: relative;
   padding: 5rem;
   height: calc(100vh - 10rem);
   max-height: 1000px;
