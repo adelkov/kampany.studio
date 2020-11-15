@@ -26,4 +26,11 @@ const StyledMainBanner = styled.div`
   &:hover {
     border-radius: 14px;
   }
+
+  @media (max-width: 600px) {
+    height: 66px;
+    line-height: 66px;
+    font-size: 3em;
+    padding: 0 40px;
+  }
 `;

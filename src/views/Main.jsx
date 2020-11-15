@@ -45,12 +45,6 @@ function Main() {
         >
           kampany.studio
         </MainBanner>
-        <OutlinedBanner
-          id={"xmas"}
-          style={{ gridArea: "1 / 3 / 1 / 4", justifySelf: "end" }}
-        >
-          Nyakunkon a karácsony!
-        </OutlinedBanner>
         <div
           id={"sub-title"}
           style={{
@@ -76,6 +70,12 @@ function Main() {
           A Kampany Studio segít vállalkozásodnak a gyors és hatékony
           kommunikációban.
         </SecondaryBanner>
+        <OutlinedBanner
+          id={"xmas"}
+          style={{ gridArea: "1 / 3 / 1 / 4", justifySelf: "end" }}
+        >
+          Nyakunkon a karácsony!
+        </OutlinedBanner>
         <Step
           className={"step"}
           style={{ gridArea: "4 / 1 / 5 / 2", justifySelf: "center" }}
@@ -119,6 +119,10 @@ const Back = styled.div`
   justify-content: center;
   align-items: center;
   background: ${(props) => props.theme.second};
+
+  @media (max-width: 600px) {
+    height: auto;
+  }
 `;
 
 const MainContainer = styled.div`
@@ -133,11 +137,16 @@ const MainContainer = styled.div`
   grid-template-rows: repeat(5, 1fr);
   column-gap: 10px;
   row-gap: 10px;
-  //@media (max-width: 75em) {
-  //  height: auto;
-  //  display: flex;
-  //  flex-direction: column;
-  //  align-items: center;
-  //  justify-content: center;
-  //   }
+
+  @media (max-width: 600px) {
+    height: auto;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & > * {
+      margin: 2rem 0;
+    }
+  }
 `;
