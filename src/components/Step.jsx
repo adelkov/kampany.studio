@@ -2,10 +2,10 @@ import React from 'react'
 import styled from "styled-components";
 
 
-const Step = ({index, text}) => {
+const Step = ({index, text, style, className}) => {
   
   return (
-    <StyledStep>
+    <StyledStep className={className} style={style}>
       <Index>{index}.</Index>
       <Text>{text}</Text>
     </StyledStep>

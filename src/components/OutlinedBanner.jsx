@@ -2,10 +2,11 @@ import React from 'react'
 import styled from "styled-components";
 
 
-const OutlinedBanner = ({children}) => {
+const OutlinedBanner = ({children, style, id}) => {
+
   
   return (
-    <StyledOutlinedBanner>
+    <StyledOutlinedBanner id={id} style={style}>
       {children}
     </StyledOutlinedBanner>
   )
@@ -29,4 +30,16 @@ const StyledOutlinedBanner = styled.div`
   box-shadow: 3px 3px 0 0 rgba(0, 58, 92, 0.25),
               3px 3px 0 0 rgba(0, 58, 92, 0.25) inset;
   border-radius: 15px;
+  
+  cursor:pointer;
+  transition: all .5s;
+  &:hover {
+    background: ${props => props.theme.main};
+    color: ${props => props.theme.white};
+  }
+  
+  &:active {
+    background: transparent;
+    color: ${props => props.theme.main};
+  }
 `

@@ -2,10 +2,10 @@ import React from 'react'
 import styled from "styled-components";
 
 
-const CAT = ({children}) => {
+const CAT = ({children, style, id, onClick}) => {
   
   return (
-    <StyledCAT>
+    <StyledCAT style={style} id={id} onClick={onClick}>
       {children}
     </StyledCAT>
   )

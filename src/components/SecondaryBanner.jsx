@@ -2,10 +2,10 @@ import React from 'react'
 import styled from "styled-components";
 
 
-const SecondaryBanner = ({children}) => {
+const SecondaryBanner = ({children, style, id}) => {
 
     return (
-        <StyledSecondaryBanner>
+        <StyledSecondaryBanner style={style} id={id}>
           {children}
         </StyledSecondaryBanner>
     )
